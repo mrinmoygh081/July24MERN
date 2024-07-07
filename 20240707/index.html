@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPathshala</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <div class="root">1</div>
+    <div class="root">2</div>
+    <div class="root">3</div>
+
+    <!-- 
+    DOM: Document Object Model
+    -->
+    <script>
+      const root = document.getElementById("root");
+      const rCls = document.getElementsByClassName("root");
+
+      const r1 = document.querySelector("#root2");
+      // console.log(r1);
+      const r2 = document.querySelectorAll(".root");
+      console.log(r2);
+
+      // console.log(rCls.length);
+
+      // console.log(rCls[0]);
+
+      // for (let i = 0; i < rCls.length; i++) {
+      //   console.log(rCls[i]);
+      //   rCls[i].style.color = "red";
+      // }
+
+      // for (let i = 0; i < rCls.length; i++) {
+      //   console.log(rCls[i]);
+      //   rCls[i].innerHTML = "<h1>Hello world!</h1>";
+
+      // }
+      // root.innerHTML = "<h1>Hello world!</h1>";
+    </script>
+
+    <!-- <script>
+      // console.log(document);
+      let root = document.getElementById("root");
+      // console.log(root.innerHTML);
+      // root.style.display = "none";
+      root.innerHTML = "<h1>Hello World!</h1>";
+      let rootCls = document.getElementsByClassName("root");
+      console.log(rootCls.length);
+      for (let i = 0; i < rootCls.length; i++) {
+        rootCls[i].innerHTML = "I AM THE GREATEST DEVELOPER!";
+      }
+      // rootCls.map((item) => {
+      //   item.innerHTML = "I'm DONE";
+      // });
+    </script> -->
+  </body>
+</html>
