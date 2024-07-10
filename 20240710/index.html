@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPathashala</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button id="button">CLICK ME</button>
+    <!-- <form onsubmit="return validateInput()">
+      <input
+        type="text"
+        name="nm"
+        id="nameInput"
+        placeholder="Enter your name"
+      /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function validateInput() {
+        const nameInput = document.querySelector("#nameInput");
+        if (nameInput.value === "") {
+          alert("Please enter your name");
+          return false;
+        }
+      }
+    </script> -->
+
+    <script>
+      const button = document.querySelector("#button");
+      const box = document.querySelector(".box");
+
+      //   box.innerHTML = "Hello, world!";
+
+      button.addEventListener("click", function (e) {
+        box.style.backgroundColor = "red";
+        if (box.style.display === "none") {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+      box.addEventListener("mouseenter", function (e) {
+        box.innerHTML = "Hello, world!";
+      });
+      box.addEventListener("click", function (e) {
+        box.innerHTML = "You clicked!";
+      });
+      box.addEventListener("mouseout", function (e) {
+        box.innerHTML = "Thank you!";
+      });
+    </script>
+  </body>
+</html>
