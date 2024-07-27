@@ -31,6 +31,16 @@ const Header = () => {
                   Contact
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/posts">
+                  Posts
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/signup">
+                  Signup
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
