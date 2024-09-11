@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Counter from "./pages/Counter";
 
 function App() {
   const [data, setData] = useState(null);
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <Counter />
+      {/* <div className="container">
         <form>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
@@ -66,7 +68,7 @@ function App() {
               </div>
             ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
